@@ -1,9 +1,159 @@
 @media screen and (max-width: 1561px)
-
-@media screen and (max-width: 1281px)
-
+    .nav
+        &__link
+            font-size: 1.11vw
+        &__logo
+            .nav__link
+                display: block
+                width: 3.6vw
+                height: 3.6vw
+                img
+                    position: relative
+                    width: 3.6vw
 @media screen and (max-width: 1025px)
-
-@media screen and (max-width: 1024px)
-
+    .attention
+        padding: 1.3vw 4.14vw
+        &__age
+            height: 3.9vw
+            width: 3.9vw
+            font-size: 2.08vw
+        &__text
+            font-size: 2.08vw
+    .nav
+        &__link
+            font-size: 1.6vw
+        &__logo
+            .nav__link
+                display: block
+                width: 6.5vw
+                height: 6.5vw
+                img
+                    position: relative
+                    width: 6.5vw
+    .hero
+        &__title
+            font-size: 3.71vw
+        &__text
+            font-size: 1.6vw
+    .offers
+        padding-top: 2.08vw
+        padding-bottom: 2.08vw
+        &__item
+            padding: 1.56vw
+            border-radius: 1.04vw
+            margin: 2.08vw 5.21vw
+            &__content
+                margin-bottom: 0.52vw
+            &__logo
+                img
+                    width: 16vw
+            &__pay
+                margin-top: 0.65vw
+                img
+                    border-radius: 0.26vw
+                    margin-right: 0.52vw
+                    width: 2.71vw
+                    height: 1.56vw
+            &__discr
+                &__title
+                    font-size: 2.71vw
+            &__bonus
+                &__title
+                    font-size: 1.41vw
+                &__text
+                    font-size: 1.41vw
+            &__rating
+                margin-top: 0.65vw
+                &__stars
+                  scale: 0.8
+                  margin-left: -1.95vw
+                &__text
+                    font-size: 0.83vw
+            &__link
+                a
+                    width: 20.31vw
+                    height: 5.37vw
+                    font-size: 1.86vw
+                    &:hover
+                        &:after
+                            bottom: -8px
+                            left: -17px
+                            right: -17px
+                            top: -8px
+                    &:after
+                        top: -3px
+                        left: -3px
+                        right: -3px
+                        bottom: -3px
+            &__attetion
+                padding: 0.52vw
+                &__text
+                    font-size: 0.83vw
+                    margin-right: 0.52vw
+                &__link
+                    font-size: 0.94vw
+                    margin-right: 0.52vw
+    .faq
+        &__drop-menu
+            &__title
+                font-size: 1.6vw
+        .drop__text
+            font-size: 1.6vw
+    .footer
+          &__tech-page
+              &__item
+                  border-radius: 1.95vw
+          &__discr
+              &__page
+                  &__link
+                    font-size: 0.9vw
+    .modal
+        width: 72.92vw
+        height: 37.67vw
+        border-radius: 10px
+        padding: 3.9vw
+        &__wrapper
+            img
+                top: -30%
+                left: -5%
+                width: 8.33vw
+        &__title
+            font-size: 3.65vw
+        &__text
+            font-size: 2.08vw
+            margin-right: 0.52vw
+            a
+                margin-right: 0.52vw
+                font-size: 2.08vw
+        &__btn
+            width: 26.04vw
+            height: 7.16vw
+            font-size: 2.21vw
+            &__container
+                display: flex
+                justify-content: space-around
+                margin: 20px 0
 @media screen and (max-width: 550px)
+    .nav
+        position: relative
+        display: flex
+        justify-content: space-between
+        padding-left: 13.33vw
+        padding-right: 13.33vw
+        &__list
+            margin-left: 0
+            &__mob
+                position: absolute
+                top: 90%
+                right: 6%
+                display: flex
+                flex-direction: column
+                align-items: center
+                padding: 10px
+                background: #000
+                .nav__item:not(:last-child)
+                    margin-bottom: 5px
+        .des
+            display: none
+        &__menu-btn
+            display: block

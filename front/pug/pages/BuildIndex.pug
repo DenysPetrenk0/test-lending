@@ -1,20 +1,32 @@
+.attention
+	p.attention__age 18+
+	p.attention__text Ces offres s’adressent uniquement aux adultes (18 ans et plus) — veillez toujours à jouer de façon responsable et mesurée.
 header.header
 	nav.nav
 		ul.nav__list
-			li.nav__item
+			li.nav__item.des
 				a(href="#offers").nav__link Offres
-			li.nav__item
+			li.nav__item.des
 				a(href="#aboutUs").nav__link À propos de nous
 			li.nav__item.nav__logo
 				a(href="/index.html").nav__link
 					img(src="img/header-logo.png" alt="Сasino en ligne")
+			li.nav__item.des
+				a(href="#faq").nav__link FAQ
+			li.nav__item.des
+				a(href="#responsGame").nav__link Jeu responsable
+		button(type="button" data-menu-button).nav__menu-btn
+			svg(width="25" height="25").nav__menu-btn__icon
+				path(d="M6.4 11.734v-2.134h19.2v2.134h-19.2zM6.4 17.066h19.2v-2.133h-19.2v2.133zM6.4 22.4h19.2v-2.134h-19.2v2.134z" fill="#967140")
+		ul(data-menu).nav__list__mob
+			li.nav__item
+				a(href="#offers").nav__link Offres
+			li.nav__item
+				a(href="#aboutUs").nav__link À propos de nous
 			li.nav__item
 				a(href="#faq").nav__link FAQ
 			li.nav__item
 				a(href="#responsGame").nav__link Jeu responsable
-		button(type="button" data-menu-button).nav__menu-btn
-			svg.nav__menu-btn__icon
-				path(d="M6.4 11.734v-2.134h19.2v2.134h-19.2zM6.4 17.066h19.2v-2.133h-19.2v2.133zM6.4 22.4h19.2v-2.134h-19.2v2.134z")
 main
 	section.hero
 		h1.hero__title Les meilleurs casinos en ligne<br>agréés en France
@@ -151,3 +163,13 @@ footer#responsGame.footer
 				a(href="/terms-use.html").footer__discr__page__link Conditions d'utilisation
 			li.footer__discr__page
 				a(href="/resp-game.html").footer__discr__page__link Jeu responsable
+div(data-modal).backdrop
+	.modal
+		.modal__wrapper
+			img(src="img/18.png" alt="Сasino en ligne").mobal__age
+			h3.modal__title Accès réservé aux 18+
+			p.modal__text Le contenu de ce site est réservé aux personnes majeures (18 ans et plus). En entrant, vous confirmez avoir au moins 18 ans. Jouez de manière prudente et responsable.
+			.modal__btn__container
+				button(type="button" data-menu-age="true").modal__btn J’ai 18 ans ou plus
+				button(type="button" data-menu-age="false").modal__btn Je n’ai pas 18 ans
+			p.modal__text En continuant, vous acceptez nos <a href="pages/conditions.html">Conditions</a> et notre <a href="pages/policy.html">Politique de confidentialité</a>.

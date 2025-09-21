@@ -1,23 +1,47 @@
 header.header
     nav.nav
         ul.nav__list
-            li.nav__item
+            li.nav__item.des
                 a(href="#offers").nav__link Offres
-            li.nav__item
+            li.nav__item.des
                 a(href="#aboutUs").nav__link À propos de nous
             li.nav__item.nav__logo
                 a(href="/index.html").nav__link
                     img(src="img/header-logo.png" alt="Сasino en ligne")
+            li.nav__item.des
+                a(href="#faq").nav__link FAQ
+            li.nav__item.des
+                a(href="#responsGame").nav__link Jeu responsable
+        button(type="button" data-menu-button).nav__menu-btn
+            svg(width="25" height="25").nav__menu-btn__icon
+                path(d="M6.4 11.734v-2.134h19.2v2.134h-19.2zM6.4 17.066h19.2v-2.133h-19.2v2.133zM6.4 22.4h19.2v-2.134h-19.2v2.134z" fill="#967140")
+        ul(data-menu).nav__list__mob
+            li.nav__item
+                a(href="#offers").nav__link Offres
+            li.nav__item
+                a(href="#aboutUs").nav__link À propos de nous
             li.nav__item
                 a(href="#faq").nav__link FAQ
             li.nav__item
                 a(href="#responsGame").nav__link Jeu responsable
-        button(type="button" data-menu-button).nav__menu-btn
-            svg.nav__menu-btn__icon
-                path(d="M6.4 11.734v-2.134h19.2v2.134h-19.2zM6.4 17.066h19.2v-2.133h-19.2v2.133zM6.4 22.4h19.2v-2.134h-19.2v2.134z")
 main
     section.pages
-        h2.pages__title Term-Use
+        .pages__content
+            h2.pages__title Ce que nous faisons (et ne faisons pas)
+            p.pages__text <span>bestfranceoffer.com</span> est un site d’information. Nous présentons des plateformes de paris en ligne, mais nous n’exploitons aucun site de jeu nous-mêmes. Nous ne traitons pas de dépôts, de bonus, ni de comptes joueurs. Nous partageons simplement des infos, des classements, et des liens affiliés vers des partenaires.
+        .pages__content
+            h2.pages__title Pour qui est destiné ce site ?
+            p.pages__text Le contenu de ce site est réservé aux personnes âgées de <span>18 ans ou plus</span>. Nous encourageons toujours un jeu réfléchi, modéré, et en accord avec la législation en vigueur dans votre pays.
+        .pages__content
+            h2.pages__title Responsabilités
+            p.pages__text Nous nous efforçons de fournir des informations exactes, mais nous ne pouvons garantir que tout soit toujours à jour ou exempt d’erreurs. Nous ne sommes pas responsables des offres, conditions ou services proposés sur les sites tiers mentionnés.
+        .pages__content
+            h2.pages__title Respect du contenu
+            p.pages__text Tous les textes et visuels présents sur <span>bestfranceoffer.com</span> sont protégés. Merci de ne pas les copier ou réutiliser sans autorisation.
+        .pages__content
+            h2.pages__title Besoin de nous joindre ?
+            p.pages__text Pour toute remarque ou question, l’équipe reste disponible à :
+                a(href="mailto:support@bestfranceoffer.com") support@bestfranceoffer.com
 footer#responsGame.footer
     ul.footer__tech-page__list
         li.footer__tech-page__item

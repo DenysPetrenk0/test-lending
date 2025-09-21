@@ -1,23 +1,107 @@
 header.header
     nav.nav
         ul.nav__list
-            li.nav__item
+            li.nav__item.des
                 a(href="#offers").nav__link Offres
-            li.nav__item
+            li.nav__item.des
                 a(href="#aboutUs").nav__link À propos de nous
             li.nav__item.nav__logo
                 a(href="/index.html").nav__link
                     img(src="img/header-logo.png" alt="Сasino en ligne")
+            li.nav__item.des
+                a(href="#faq").nav__link FAQ
+            li.nav__item.des
+                a(href="#responsGame").nav__link Jeu responsable
+        button(type="button" data-menu-button).nav__menu-btn
+            svg(width="25" height="25").nav__menu-btn__icon
+                path(d="M6.4 11.734v-2.134h19.2v2.134h-19.2zM6.4 17.066h19.2v-2.133h-19.2v2.133zM6.4 22.4h19.2v-2.134h-19.2v2.134z" fill="#967140")
+        ul(data-menu).nav__list__mob
+            li.nav__item
+                a(href="#offers").nav__link Offres
+            li.nav__item
+                a(href="#aboutUs").nav__link À propos de nous
             li.nav__item
                 a(href="#faq").nav__link FAQ
             li.nav__item
                 a(href="#responsGame").nav__link Jeu responsable
-        button(type="button" data-menu-button).nav__menu-btn
-            svg.nav__menu-btn__icon
-                path(d="M6.4 11.734v-2.134h19.2v2.134h-19.2zM6.4 17.066h19.2v-2.133h-19.2v2.133zM6.4 22.4h19.2v-2.134h-19.2v2.134z")
 main
     section.pages
-        h2.pages__title Resp-game
+        .pages__content
+            h2.pages__title Jeu Responsable
+            p.pages__text <span>CasiEnLigne</span> soutient le jeu responsable et souhaite s’assurer que les jeux d’argent restent une activité agréable – et non un fardeau. Les jeux d’argent en ligne doivent toujours être amusants, et non un moyen de gagner de l’argent.
+        .pages__content
+            h2.pages__title Conformité ANJ
+            p.pages__text Ce site respecte la réglementation française des jeux en ligne sous l’autorité de l’<span>Autorité Nationale des Jeux (ANJ)</span>.
+        .pages__content
+            h2.pages__title Limite d’âge – 18+
+            p.pages__text Vous devez avoir au moins <span>18 ans</span> pour utiliser ce site web ou participer à toute forme de jeu d’argent en ligne. Nous prenons les restrictions d’âge très au sérieux.
+            p.pages__text <span>18+</span>
+        .pages__content
+            h2.pages__title Jouez avec prudence
+            p.pages__text &#9679; Fixez-vous un budget et respectez-le.
+            p.pages__text &#9679; Ne jouez jamais avec de l’argent que vous ne pouvez pas vous permettre de perdre.
+            p.pages__text &#9679; Évitez de courir après vos pertes.
+            p.pages__text &#9679; Ne jouez que lorsque vous vous sentez calme et lucide.
+            p.pages__text &#9679; Prenez des pauses régulières.
+            p.pages__text &#9679; Ne jouez jamais sous l’influence de l’alcool ou de drogues.
+            p.pages__text &#9679; Considérez le jeu comme un divertissement, pas comme un investissement.
+        .pages__content
+            h2.pages__title Jouez avec prudence
+            p.pages__sub-title Si vous craignez que le jeu ne devienne un problème, posez-vous ces questions :
+            p.pages__text &#9679; Jouez-vous pour échapper aux problèmes ou au stress ?
+            p.pages__text &#9679; Passez-vous plus de temps ou d’argent que prévu ?
+            p.pages__text &#9679; Ressentez-vous de la culpabilité ou de la honte après avoir joué ?
+            p.pages__text &#9679; Cachez-vous vos activités de jeu aux autres ?
+            p.pages__text &#9679; Mentez-vous sur le temps ou l’argent que vous consacrez au jeu ?
+            p.pages__text &#9679; NNégligez-vous vos responsabilités familiales ou professionnelles ?
+            p.pages__sub-title Si vous avez répondu “oui” à l’une de ces questions, envisagez de demander de l’aide.
+        .pages__content
+            h2.pages__title Aide et Ressources en France
+            ul
+                li
+                    a(href="https://www.joueurs-info-service.fr/") Joueurs Info Service
+                    span.pages__sub-text – Pour toute question, vous pouvez nous écrire à
+                li
+                    a(href="https://www.evalujeu.fr/") EvaluJeu
+                    span.pages__sub-text – Test d’auto-évaluation de votre comportement de jeu
+                li
+                    a(href="https://mediateur-jeux.fr/") Médiateur des Jeux
+                    span.pages__sub-text – Médiation en cas de litige
+                li
+                    a(href="https://anj.fr/") ANJ
+                    span.pages__sub-text – Autorité Nationale des Jeux
+                li
+                    a(href="https://www.ifac-addictions.fr/") IFAC
+                    span.pages__sub-text – Institut Fédératif des Addictions Comportementales
+        .pages__content
+            h2.pages__title Auto-exclusion
+            p.pages__text Vous voulez faire une pause dans le jeu ? Vous pouvez vous auto-exclure directement auprès des opérateurs de jeux agréés par l’ANJ. Cette mesure vous permet de bloquer votre accès aux sites de jeux d’argent français licenciés.
+            p.pages__text Pour une auto-exclusion globale, contactez directement l’<a href="https://anj.fr/" target="_blank" rel="noopener">ANJ</a> ou les organismes d’aide mentionnés ci-dessus.
+        .pages__content
+            h2.pages__title Outils de Contrôle
+            p.pages__sub-title La plupart des sites de jeux agréés en France proposent des outils pour vous aider à contrôler votre jeu :
+            p.pages__text &#9679; <span>Limites de dépôt :</span> Fixez des limites quotidiennes, hebdomadaires ou mensuelles
+            p.pages__text &#9679; <span>Limites de temps :</span> Contrôlez le temps passé à jouer
+            p.pages__text &#9679; <span>Limites de perte :</span> Définissez un montant maximum de perte
+            p.pages__text &#9679; <span>Auto-exclusion temporaire :</span> Bloquez votre accès pour une période déterminée
+            p.pages__text &#9679; <span>Rappels de temps :</span> Recevez des notifications sur le temps de jeu
+        .pages__content
+            h2.pages__title Signaux d’Alarme
+            p.pages__sub-title Soyez attentif à ces signaux qui peuvent indiquer un problème de jeu :
+            p.pages__text &#9679; Augmentation progressive des mises
+            p.pages__text &#9679; Préoccupation constante par le jeu
+            p.pages__text &#9679; Difficultés financières liées au jeu
+            p.pages__text &#9679; Isolement social
+            p.pages__text &#9679; Négligence des obligations personnelles ou professionnelles
+            p.pages__text &#9679; Tentatives répétées d’arrêter sans succès
+        .pages__content
+            h2.pages__title Important
+            p.pages__text Le jeu comporte des risques. Jouez de manière responsable et demandez de l’aide si nécessaire. Si vous ou quelqu’un que vous connaissez avez un problème de jeu, n’hésitez pas à contacter les services d’aide disponibles.
+        .pages__content
+            h2.pages__title Besoin d’aide immédiate ?
+            p.pages__text Appelez <span>Joueurs Info Service</span> au
+                a(href="tel:0974751313") 09 74 75 13 13
+            p.pages__text Service gratuit et confidentiel, ouvert 7j/7
 footer#responsGame.footer
     ul.footer__tech-page__list
         li.footer__tech-page__item

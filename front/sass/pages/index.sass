@@ -13,7 +13,29 @@ $font-sansation-bold: Sansation-Bold, sans-serif
 body
 	font-family: $font-sansation-regular
 	overscroll-behavior: none
-
+.attention
+	display: flex
+	justify-content: center
+	align-items: center
+	padding: 0.52vw 4.14vw
+	background: $clr-gray
+	&__age
+		display: flex
+		align-items: center
+		justify-content: center
+		height: 1.56vw
+		width: 1.56vw
+		padding: 5px
+		border-radius: 50%
+		background: $clr-white
+		margin-right: 10px
+		font-size: 0.83vw
+	&__text
+		color: $clr-dark-gray
+		font-family: $font-sansation-regular
+		font-size: 0.83vw
+		font-style: normal
+		line-height: 120%
 .nav
 	padding-top: 2.08vw
 	padding-bottom: 2.08vw
@@ -65,7 +87,8 @@ body
 				fill: $clr-gold
 				filter: blur(50px)
 				z-index: 1
-	&__menu-btn
+	&__menu-btn,
+	.nav__list__mob
 		display: none
 .hero
 	display: flex
@@ -86,7 +109,7 @@ body
 		color: $clr-gray
 		text-align: center
 		font-family: $font-sansation-light
-		font-size: 24px
+		font-size: 1.25vw
 		font-style: normal
 		font-weight: 500
 		line-height: 120%
@@ -99,21 +122,21 @@ body
 	padding-bottom: 2.08vw
 	&__item
 		padding: 1.56vw
-		border-radius: 20px
+		border-radius: 1.04vw
 		margin: 2.08vw 5.21vw
 		background: $clr-dark-gray
 		&__content
 			display: flex
 			justify-content: space-around
 			align-items: center
-			margin-bottom: 10px
+			margin-bottom: 0.52vw
 		&__logo
 			img
 				width: 16vw
 		&__pay
-			margin-top: 30px
+			margin-top: 1.56vw
 			img
-				margin-right: 10px
+				margin-right: 0.52vw
 				border-radius: 5px
 				width: 2.71vw
 				height: 1.56vw
@@ -122,7 +145,7 @@ body
 				color: $clr-gold
 				text-align: left
 				font-family: $font-sansation-bold
-				font-size: 52px
+				font-size: 2.71vw
 				font-style: normal
 				line-height: 120%
 		&__bonus
@@ -130,14 +153,14 @@ body
 				color: $clr-white
 				text-align: left
 				font-family: $font-sansation-regular
-				font-size: 27px
+				font-size: 1.41vw
 				font-style: normal
 				line-height: 120%
 			&__text
 				color: $clr-gray
 				text-align: left
 				font-family: $font-sansation-regular
-				font-size: 27px
+				font-size: 1.41vw
 				font-style: normal
 				line-height: 120%
 		&__rating
@@ -148,7 +171,7 @@ body
 				color: $clr-gray
 				text-align: left
 				font-family: $font-sansation-regular
-				font-size: 16px
+				font-size: 0.83vw
 				font-style: normal
 				line-height: 120%
 		&__link
@@ -191,7 +214,7 @@ body
 			display: flex
 			justify-content: center
 			align-items: center
-			padding: 10px
+			padding: 0.52vw
 			border: 2px solid $clr-white
 			border-radius: 20px
 			background: $clr-gray
@@ -199,20 +222,20 @@ body
 				color: $clr-dark-gray
 				text-align: left
 				font-family: $font-sansation-regular
-				font-size: 16px
+				font-size: 0.83vw
 				font-style: normal
 				line-height: 120%
-				margin-right: 10px
+				margin-right: 0.52vw
 				&:first-child
 					color: $clr-white
 			&__link
 				color: $clr-dark-gray
 				text-align: left
 				font-family: $font-dms-regular
-				font-size: 18px
+				font-size: 0.94vw
 				font-style: normal
 				line-height: 120%
-				margin-right: 10px
+				margin-right: 0.52vw
 				text-decoration: underline
 				&:hover
 					color: $clr-white
@@ -271,6 +294,7 @@ body
 			line-height: 1.2
 			background: $clr-dark-gray
 .footer
+	margin-top: 60px
 	padding-bottom: 60px
 	&__tech-page
 		&__list
@@ -304,7 +328,7 @@ body
 				color: $clr-gray
 				text-align: left
 				font-family: $font-sansation-regular
-				font-size: 27px
+				font-size: 1.41vw
 				font-style: normal
 				line-height: 120%
 				margin-bottom: 10px
@@ -312,7 +336,7 @@ body
 				color: $clr-gray
 				text-align: left
 				font-family: $font-sansation-regular
-				font-size: 22px
+				font-size: 1.15vw
 				font-style: normal
 				line-height: 120%
 				margin-bottom: 10px
@@ -320,17 +344,165 @@ body
 			display: flex
 			flex-direction: column
 			justify-content: space-evenly
-
 		&__page
 			&__link
 				color: $clr-gold
 				font-family: $font-sansation-bold
-				font-size: 22px
+				font-size: 1.15vw
 				text-transform: uppercase
 				&:hover
 					color: $clr-white
 .pages
+	padding: 80px 80px
+	background: url("../img/hero-bg.jpg") 50% 50%/cover no-repeat
 	&__title
+		color: $clr-white
+		text-align: left
+		font-family: $font-sansation-bold
+		font-size: 1.56vw
+		font-style: normal
+		letter-spacing: 0.3vw
+		line-height: 100%
+		margin-bottom: 1.56vw
+	&__sub-title
+		color: $clr-white
+		text-align: left
+		font-family: $font-sansation-regular
+		font-size: 1.04vw
+		font-style: normal
+		line-height: 100%
+		margin-bottom: 0.52vw
+	&__text
+		color: $clr-white
+		text-align: left
+		font-family: $font-sansation-regular
+		font-size: 1.04vw
+		font-style: normal
+		line-height: 100%
+		margin-bottom: 0.52vw
+		margin-left: 1.56vw
+		span
+			color: $clr-gray
+	&__sub-text
+		color: $clr-white
+		text-align: left
+		font-family: $font-sansation-regular
+		font-size: 1.04vw
+		font-style: normal
+		line-height: 100%
+		margin-bottom: 0.52vw
+		margin-left: 0.52vw
+	&__content
+		margin-bottom: 2.6vw
+		a
+			color: $clr-gray
+			text-align: left
+			font-family: $font-dms-regular
+			font-size: 0.94vw
+			font-style: normal
+			line-height: 120%
+			margin-left: 10px
+			&:hover
+				color: $clr-white
+	li
+		margin-bottom: 0.52vw
+.backdrop
+	position: fixed
+	top: 0
+	left: 0
+	width: 100vw
+	height: 100vh
+	background: rgba(0, 0, 0, 0.9)
+	z-index: 1000
+	display: flex
+	justify-content: center
+	align-items: center
+	transition: all 0.3s ease
+.modal
+	position: absolute
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
+	width: 560px
+	height: 290px
+	background: $clr-gray
+	border-radius: 20px
+	padding: 40px
+	&__wrapper
+		position: relative
+		img
+			position: absolute
+			top: -30%
+			left: -5%
+			width: 64px
+	&__title
+		color: #fff
+		text-align: center
+		font-family: $font-sansation-regular
+		font-size: 28px
+		font-style: normal
+		line-height: 120%
+	&__text
+		color: $clr-dark-gray
+		text-align: left
+		font-family: $font-sansation-regular
+		font-size: 16px
+		font-style: normal
+		line-height: 120%
+		margin-right: 0.52vw
+		a
+			color: $clr-dark-gray
+			text-align: left
+			font-family: $font-sansation-regular
+			font-size: 16px
+			font-style: normal
+			line-height: 120%
+			margin-right: 0.52vw
+			text-decoration: underline
+	&__btn
+		position: relative
+		border: none
+		background: transparent
+		display: flex
+		align-items: center
+		justify-content: center
+		cursor: pointer
+		width: 200px
+		height: 55px
+		transition: all .3s cubic-bezier(.7,0,.3,1) 0s
+		color: $clr-gold
+		font-family: $font-sansation-bold
+		font-size: 17px
+		text-transform: uppercase
+		&:last-child
+			color: $clr-white
+			&:after
+				border: 3px solid $clr-white
+		&:hover
+			&:after
+				bottom: -8px
+				left: -17px
+				right: -17px
+				top: -8px
+		&:after
+			content: ""
+			display: block
+			position: absolute
+			top: -3px
+			left: -3px
+			right: -3px
+			bottom: -3px
+			border: 3px solid $clr-gold
+			-webkit-transition: all .3s cubic-bezier(.7,0,.3,1) 0s
+			transition: all .3s cubic-bezier(.7,0,.3,1) 0s
+		&__container
+			display: flex
+			justify-content: space-around
+			margin: 20px 0
+.no-access
+	padding: 21.88vw 4.17vw
+	background: url("../img/hero-bg.jpg") 50% 50%/cover no-repeat
+	&__text
 		color: $clr-white
 		text-align: center
 		font-family: $font-dms-italic
@@ -339,6 +511,8 @@ body
 		letter-spacing: 0.3vw
 		line-height: 100%
 		margin-bottom: 2.6vw
+.noScroll
+	overflow: hidden
 .title
 	color: $clr-white
 	text-align: center
@@ -355,3 +529,5 @@ body
 	font-size: 1.25vw
 	font-style: normal
 	line-height: 120%
+.is-open
+	display: block !important

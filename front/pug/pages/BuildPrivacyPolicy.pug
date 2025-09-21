@@ -1,23 +1,52 @@
 header.header
     nav.nav
         ul.nav__list
-            li.nav__item
+            li.nav__item.des
                 a(href="#offers").nav__link Offres
-            li.nav__item
+            li.nav__item.des
                 a(href="#aboutUs").nav__link À propos de nous
             li.nav__item.nav__logo
                 a(href="/index.html").nav__link
                     img(src="img/header-logo.png" alt="Сasino en ligne")
+            li.nav__item.des
+                a(href="#faq").nav__link FAQ
+            li.nav__item.des
+                a(href="#responsGame").nav__link Jeu responsable
+        button(type="button" data-menu-button).nav__menu-btn
+            svg(width="25" height="25").nav__menu-btn__icon
+                path(d="M6.4 11.734v-2.134h19.2v2.134h-19.2zM6.4 17.066h19.2v-2.133h-19.2v2.133zM6.4 22.4h19.2v-2.134h-19.2v2.134z" fill="#967140")
+        ul(data-menu).nav__list__mob
+            li.nav__item
+                a(href="#offers").nav__link Offres
+            li.nav__item
+                a(href="#aboutUs").nav__link À propos de nous
             li.nav__item
                 a(href="#faq").nav__link FAQ
             li.nav__item
                 a(href="#responsGame").nav__link Jeu responsable
-        button(type="button" data-menu-button).nav__menu-btn
-            svg.nav__menu-btn__icon
-                path(d="M6.4 11.734v-2.134h19.2v2.134h-19.2zM6.4 17.066h19.2v-2.133h-19.2v2.133zM6.4 22.4h19.2v-2.134h-19.2v2.134z")
 main
     section.pages
-        h2.pages__title privacy-policy
+        .pages__content
+            h2.pages__title Notre engagement envers votre vie privée
+            p.pages__text Sur <span>bestfranceoffer.com</span>, votre confidentialité est importante. Nous ne collectons que l’essentiel, uniquement dans le but d’améliorer votre navigation ou de répondre à vos demandes. Pas de profilage inutile, pas de revente de données. C’est une question de respect.
+        .pages__content
+            h2.pages__title Quelles informations sont collectées ?
+            p.pages__sub-title Selon votre navigation, il se peut que nous recueillions :
+            p.pages__text &#9679; Des données que vous nous fournissez : par exemple, si vous nous écrivez via un formulaire de contact.
+            p.pages__text &#9679; Des informations techniques liées à votre visite : type de navigateur, pages vues, temps de consultation, etc.
+            p.pages__sub-title Aucune de ces données n’est utilisée pour vous suivre personnellement. Elles servent uniquement à mieux comprendre comment le site est utilisé.
+        .pages__content
+            h2.pages__title Pourquoi les utiliser ?
+            p.pages__sub-title Nos objectifs sont simples :
+            p.pages__text &#9679; Offrir une expérience fluide et agréable
+            p.pages__text &#9679; Répondre à vos messages quand vous nous contactez
+            p.pages__text &#9679; Observer de manière générale ce qui plaît (ou non) sur le site
+            p.pages__sub-title Les données sont anonymes ou minimales, et ne quittent jamais notre environnement sécurisé.
+        .pages__content
+            h2.pages__title Vous souhaitez modifier ou supprimer vos données ?
+            p.pages__text Vous pouvez désactiver les cookies dans les paramètres de votre navigateur. Cela pourrait affecter légèrement votre navigation, mais le site restera accessible.
+            p.pages__text Pas de souci. Si vous voulez en savoir plus sur les infos que nous stockons, ou si vous souhaitez les corriger ou les faire supprimer, écrivez-nous simplement à
+                a(href="mailto:support@bestfranceoffer.com") support@bestfranceoffer.com
 footer#responsGame.footer
     ul.footer__tech-page__list
         li.footer__tech-page__item
