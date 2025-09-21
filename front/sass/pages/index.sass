@@ -346,12 +346,25 @@ body
 			justify-content: space-evenly
 		&__page
 			&__link
+				position: relative
 				color: $clr-gold
 				font-family: $font-sansation-bold
 				font-size: 1.15vw
 				text-transform: uppercase
 				&:hover
 					color: $clr-white
+					&:before
+						transform: scaleX(1)
+				&:before
+					content: ""
+					position: absolute
+					width: 100%
+					height: 3px
+					background: $clr-white
+					bottom: -30%
+					transform: scaleX(0)
+					transform-origin: center
+					transition: transform 0.3s ease
 .pages
 	padding: 80px 80px
 	background: url("../img/hero-bg.jpg") 50% 50%/cover no-repeat
