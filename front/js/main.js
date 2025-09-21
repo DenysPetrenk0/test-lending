@@ -30,11 +30,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (ageStatus === 'true') {
         modal.style.display = 'none';
+        body.classList.remove('noScroll');
     } else if (ageStatus === 'false') {
         modal.style.display = 'none';
+        body.classList.remove('noScroll');
         main.innerHTML = main.innerHTML = '<div class="no-access"><p class="no-access__text">Vous ne remplissez pas les critères d’âge requis pour accéder à ce site. L’accès est exclusivement réservé aux personnes majeures (18+). Merci de votre compréhension.</p></div>';
-    } else {
-        modal.classList.remove('hidden');
     }
 
     btnYes.addEventListener('click', () => {
