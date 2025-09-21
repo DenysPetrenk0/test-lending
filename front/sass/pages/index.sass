@@ -1,0 +1,357 @@
+$clr-black: #000000
+$clr-white: #fff
+$clr-gold: #967140
+$clr-gray: #8e8e8e
+$clr-dark-gray: #333131
+
+$font-dms-italic: DMS-Italic, sans-serif
+$font-dms-regular: DMS-Regular, sans-serif
+$font-sansation-light: Sansation-Light, sans-serif
+$font-sansation-regular: Sansation-Regular, sans-serif
+$font-sansation-bold: Sansation-Bold, sans-serif
+
+body
+	font-family: $font-sansation-regular
+	overscroll-behavior: none
+
+.nav
+	padding-top: 2.08vw
+	padding-bottom: 2.08vw
+	&__list
+		display: flex
+		justify-content: center
+		align-items: center
+		gap: 1.56vw
+		margin-left: -50px
+	&__link
+		position: relative
+		color: $clr-gold
+		font-family: $font-sansation-bold
+		font-size: 0.83vw
+		line-height: 100%
+		text-transform: uppercase
+		transition: color 0.3s ease
+		&:hover
+			color: $clr-white
+			&:before
+				transform: scaleX(1)
+		&:before
+			content: ""
+			position: absolute
+			width: 100%
+			height: 3px
+			background: $clr-white
+			bottom: -30%
+			transform: scaleX(0)
+			transform-origin: center
+			transition: transform 0.3s ease
+	&__logo
+		.nav__link
+			display: block
+			width: 2.6vw
+			height: 2.6vw
+			img
+				position: relative
+				width: 2.6vw
+				z-index: 2
+			&:before
+				content: ""
+				position: absolute
+				top: 50%
+				left: 50%
+				transform: translate(-50%, -50%)
+				width: 2.6vw
+				height: 2.6vw
+				fill: $clr-gold
+				filter: blur(50px)
+				z-index: 1
+	&__menu-btn
+		display: none
+.hero
+	display: flex
+	flex-direction: column
+	align-items: center
+	background: url("../img/hero-bg.jpg") 50% 50%/cover no-repeat
+	padding: 5.21vw 0
+	&__title
+		color: $clr-white
+		text-align: center
+		font-family: $font-dms-italic
+		font-size: 2.71vw
+		font-style: normal
+		letter-spacing: 0.3vw
+		line-height: 100%
+		margin-bottom: 2.6vw
+	&__text
+		color: $clr-gray
+		text-align: center
+		font-family: $font-sansation-light
+		font-size: 24px
+		font-style: normal
+		font-weight: 500
+		line-height: 120%
+	&__logo
+		margin-bottom: 2.6vw
+		img
+			width: 24vw
+.offers
+	padding-top: 2.08vw
+	padding-bottom: 2.08vw
+	&__item
+		padding: 1.56vw
+		border-radius: 20px
+		margin: 2.08vw 5.21vw
+		background: $clr-dark-gray
+		&__content
+			display: flex
+			justify-content: space-around
+			align-items: center
+			margin-bottom: 10px
+		&__logo
+			img
+				width: 16vw
+		&__pay
+			margin-top: 30px
+			img
+				margin-right: 10px
+				border-radius: 5px
+				width: 2.71vw
+				height: 1.56vw
+		&__discr
+			&__title
+				color: $clr-gold
+				text-align: left
+				font-family: $font-sansation-bold
+				font-size: 52px
+				font-style: normal
+				line-height: 120%
+		&__bonus
+			&__title
+				color: $clr-white
+				text-align: left
+				font-family: $font-sansation-regular
+				font-size: 27px
+				font-style: normal
+				line-height: 120%
+			&__text
+				color: $clr-gray
+				text-align: left
+				font-family: $font-sansation-regular
+				font-size: 27px
+				font-style: normal
+				line-height: 120%
+		&__rating
+			margin-top: 10px
+			&__stars
+				color: #ffff00
+			&__text
+				color: $clr-gray
+				text-align: left
+				font-family: $font-sansation-regular
+				font-size: 16px
+				font-style: normal
+				line-height: 120%
+		&__link
+			a
+				position: relative
+				border: none
+				background: transparent
+				display: flex
+				align-items: center
+				justify-content: center
+				cursor: pointer
+				width: 266px
+				height: 64px
+				transition: all .3s cubic-bezier(.7,0,.3,1) 0s
+				color: $clr-gold
+				font-family: $font-sansation-bold
+				font-size: 22px
+				letter-spacing: 3px
+				text-transform: uppercase
+				&:hover
+					color: $clr-white
+					&:after
+						border: 3px solid $clr-white
+						bottom: -8px
+						left: -17px
+						right: -17px
+						top: -8px
+				&:after
+					content: ""
+					display: block
+					position: absolute
+					top: -3px
+					left: -3px
+					right: -3px
+					bottom: -3px
+					border: 3px solid $clr-gold
+					-webkit-transition: all .3s cubic-bezier(.7,0,.3,1) 0s
+					transition: all .3s cubic-bezier(.7,0,.3,1) 0s
+		&__attetion
+			display: flex
+			justify-content: center
+			align-items: center
+			padding: 10px
+			border: 2px solid $clr-white
+			border-radius: 20px
+			background: $clr-gray
+			&__text
+				color: $clr-dark-gray
+				text-align: left
+				font-family: $font-sansation-regular
+				font-size: 16px
+				font-style: normal
+				line-height: 120%
+				margin-right: 10px
+				&:first-child
+					color: $clr-white
+			&__link
+				color: $clr-dark-gray
+				text-align: left
+				font-family: $font-dms-regular
+				font-size: 18px
+				font-style: normal
+				line-height: 120%
+				margin-right: 10px
+				text-decoration: underline
+				&:hover
+					color: $clr-white
+.faq
+	margin-bottom: 5.21vw
+	position: relative
+	&__drop-menu[open]
+		.faq__drop-btn__arrow
+			transform: rotate(180deg)
+			path
+				fill: $clr-white
+	&__drop-menu
+		position: relative
+		z-index: 6
+		max-width: 100%
+		margin: 1.67vw auto
+		width: 75vw
+		&:hover
+			.faq__drop-btn__arrow
+				path
+					fill: $clr-white
+		&__title
+			color: $clr-white
+			font-family: $font-sansation-regular
+			font-size: 0.94vw
+			font-style: normal
+			line-height: normal
+		summary::-webkit-details-marker
+			display: none
+		> summary
+			list-style: none
+	&__drop-btn
+		cursor: pointer
+		list-style: none
+		padding: 0.73vw 0.76vw 0.63vw 0.76vw
+		border-radius: 4px
+		display: flex
+		justify-content: space-between
+		align-items: center
+		border: 3px solid $clr-gold
+		&__arrow
+			transition: transform 0.3s ease
+			svg
+				width: 24px
+				height: 24px
+	.drop
+		&__text
+			display: block
+			width: 100%
+			box-sizing: border-box
+			padding: 1.04vw 0.65vw 1.04vw 0.65vw
+			color: $clr-white
+			font-family: $font-sansation-light
+			font-size: 0.83vw
+			font-style: normal
+			line-height: 1.2
+			background: $clr-dark-gray
+.footer
+	padding-bottom: 60px
+	&__tech-page
+		&__list
+			display: flex
+			justify-content: center
+			align-items: center
+			gap: 20px
+			margin-bottom: 30px
+		&__item
+			display: flex
+			justify-content: center
+			align-items: center
+			width: 10vw
+			height: 10vw
+			background: $clr-white
+			border-radius: 20px
+			overflow: hidden
+		&__link
+			img
+				width: 10vw
+	&__discr
+		display: flex
+		margin: 0 4.17vw
+		gap: 30px
+		&__danger
+			img
+				width: 3.75vw
+		&__respons-game
+			width: 70%
+			&__title
+				color: $clr-gray
+				text-align: left
+				font-family: $font-sansation-regular
+				font-size: 27px
+				font-style: normal
+				line-height: 120%
+				margin-bottom: 10px
+			&__text
+				color: $clr-gray
+				text-align: left
+				font-family: $font-sansation-regular
+				font-size: 22px
+				font-style: normal
+				line-height: 120%
+				margin-bottom: 10px
+		&__pages
+			display: flex
+			flex-direction: column
+			justify-content: space-evenly
+
+		&__page
+			&__link
+				color: $clr-gold
+				font-family: $font-sansation-bold
+				font-size: 22px
+				text-transform: uppercase
+				&:hover
+					color: $clr-white
+.pages
+	&__title
+		color: $clr-white
+		text-align: center
+		font-family: $font-dms-italic
+		font-size: 2.71vw
+		font-style: normal
+		letter-spacing: 0.3vw
+		line-height: 100%
+		margin-bottom: 2.6vw
+.title
+	color: $clr-white
+	text-align: center
+	font-family: $font-dms-italic
+	font-size: 2.71vw
+	font-style: normal
+	letter-spacing: 0.1vw
+	line-height: 100%
+	margin-bottom: 0.52vw
+.sub-title
+	color: $clr-gray
+	text-align: center
+	font-family: $font-sansation-light
+	font-size: 1.25vw
+	font-style: normal
+	line-height: 120%
